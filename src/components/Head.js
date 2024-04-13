@@ -17,7 +17,8 @@ const Head = () => {
       </div>
       <div className="col-span-10  ">
         <input
-          className="w-1/2 px-5 border border-gray-400 p-2 rounded-l-full"
+          className="w-1/2
+         px-5 border border-gray-400 p-2 rounded-l-full"
           type="text"
         />
         <button className="border border-gray-400 px-5 p-2 bg-gray-100 rounded-r-full">
