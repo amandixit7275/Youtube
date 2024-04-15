@@ -1,19 +1,29 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 
 const Head = () => {
+  const dispatch = useDispatch();
+
+  function toggleMenuHandler() {
+    dispatch(toggleMenu());
+  }
   return (
-    <div className="grid grid-flow-col p-5 m-2 ">
+    <div className=" shadow-md grid grid-flow-col p-5 m-2 ">
       <div className=" flex col-span-1">
         <img
           className="h-14 cursor-pointer"
+          onClick={() => toggleMenuHandler()}
           src="https://static.vecteezy.com/system/resources/previews/021/190/402/large_2x/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg"
           alt=""
         />
-        <img
-          className="h-14 cursor-pointer"
-          src="https://t3.ftcdn.net/jpg/04/03/98/64/360_F_403986499_hB7zfgOXezReA0sKkxl34RoT9TbNkbpH.jpg"
-          alt=""
-        />
+        <a href="/">
+          <img
+            className="h-14 cursor-pointer"
+            src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
+            alt=""
+          />
+        </a>
       </div>
       <div className="col-span-10  ">
         <input
