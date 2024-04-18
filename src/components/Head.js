@@ -9,7 +9,7 @@ const Head = () => {
 
   async function getSearchSuggestions() {
     try {
-      const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
+      const data = await fetch(YOUTUBE_SEARCH_API);
       const json = await data.json();
       console.log(json);
     } catch (e) {
