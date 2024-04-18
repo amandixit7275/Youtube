@@ -15,10 +15,7 @@ function ButtonList() {
     "All",
     "Gaming",
     "Soccer",
-    "Valentines",
-    "Cooking",
-    "All
-  ]
+  ];
 
   return (
     <div className="flex scroll-smooth focus:scroll-auto ">
