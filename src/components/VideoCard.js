@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { setVideoId } from "../utils/appSlice";
+import React from "react";
 
 const VideoCard = ({ info }) => {
   const { snippet, statistics } = info;
@@ -14,6 +12,20 @@ const VideoCard = ({ info }) => {
         <li>{channelTitle}</li>
         <li> {statistics.viewCount} views </li>
       </ul>
+    </div>
+  );
+};
+
+export const AdVideoCard = ({ info }) => {
+  return (
+    <div className="border border-red-300">
+      <VideoCard info={info} />
+      <div className="pl-3 font-bold shadow-xl ">
+        Ad :
+        <span className="font-extralight pl-1 ">
+          {info?.snippet?.channelTitle}
+        </span>
+      </div>
     </div>
   );
 };

@@ -2,7 +2,7 @@
   "name": "my_youtube",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=",
+  "proxy": "http://suggestqueries.google.com/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
