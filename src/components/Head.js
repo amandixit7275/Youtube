@@ -64,6 +64,7 @@ const Head = () => {
       </div>
       <div className="col-span-10  ">
         <input
+          placeholder="Search"
           onChange={(e) => setSearchQuery(e.target.value)}
           onFocus={() => setShowSuggestions(true)}
           onBlur={() => setShowSuggestions(false)}
