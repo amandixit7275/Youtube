@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { cacheResults } from "../utils/searchSlice";
+import {
+  HUMBERGER_MENU,
+  USER_IMAGE,
+  YOUTUBE_API,
+  YOUTUBE_LOGO,
+} from "../utils/constant";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -51,15 +57,11 @@ const Head = () => {
         <img
           className="h-14 cursor-pointer"
           onClick={() => toggleMenuHandler()}
-          src="https://static.vecteezy.com/system/resources/previews/021/190/402/large_2x/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg"
+          src={HUMBERGER_MENU}
           alt=""
         />
         <a href="/">
-          <img
-            className="h-14 cursor-pointer"
-            src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
-            alt=""
-          />
+          <img className="h-14 cursor-pointer" src={YOUTUBE_LOGO} alt="" />
         </a>
       </div>
       <div className="col-span-10  ">
@@ -94,11 +96,7 @@ const Head = () => {
       </div>
 
       <div className="col-span-1">
-        <img
-          className="h-8"
-          src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png"
-          alt=""
-        />
+        <img className="h-8" src={USER_IMAGE} alt="" />
       </div>
     </div>
   );
