@@ -15,3 +15,4 @@ Dobouncing with 200ms
 -if difference between two key stroke is less than 200ms , - DELCIME API CALL
 ![alt text](image.png)
 ![alt text](image-1.png)
+![alt text](image-2.png)
